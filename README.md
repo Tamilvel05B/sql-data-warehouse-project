@@ -1,6 +1,4 @@
-# Welcome to the Data Warehouse & Analytics Project
-
-## 🚀 Welcome!
+# 🚀 Data Warehouse & Analytics Project
 
 Welcome to the **Data Warehouse & Analytics Project**! This repository showcases the end-to-end development of a modern data warehouse and analytics solution designed to transform raw data into meaningful business insights.
 
