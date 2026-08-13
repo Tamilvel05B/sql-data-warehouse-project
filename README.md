@@ -179,6 +179,6 @@ This project is licensed under the [MIT License](LICENSE). You are free to **use
 Hi, I'm **Tamilvel** — a **Power BI Developer & Data Analyst** with hands-on experience across healthcare, telecom, and manufacturing, and a strong interest in **Data Engineering** and **Business Intelligence**. I enjoy building scalable data solutions, designing data warehouses, and transforming raw data into actionable insights that support smarter business decisions.
 
 📫 **Let's connect:**
-[LinkedIn](https://www.linkedin.com/in/tamilvel-b-059301240/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B7YlJ6wgJTImiGgWcaM%2Fwkg%3D%3D) • [GitHub](Github) •
+[LinkedIn](https://www.linkedin.com/in/tamilvel-b-059301240) • [GitHub](https://github.com/Tamilvel05B) •
 
 *(Replace the links above with your actual profile URLs)*
