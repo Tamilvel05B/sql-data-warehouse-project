@@ -45,11 +45,11 @@ SELECT
     ci.cst_marital_status AS marital_status,
 
     -- Gender resolution: CRM is treated as the master/trusted source.
-    -- If CRM has no valid gender ('n/a'), fall back to the ERP source;
-    -- default to 'n/a' if neither source has a value.
+    -- If CRM has no valid gender ('Unknown'), fall back to the ERP source;
+    -- default to 'Unknown' if neither source has a value.
     CASE
-        WHEN ci.cst_gndr != 'n/a' THEN ci.cst_gndr
-        ELSE COALESCE(ca.gen, 'n/a')
+        WHEN ci.cst_gndr != 'Unknown' THEN ci.cst_gndr
+        ELSE COALESCE(ca.gen, 'Unknown')
     END AS gender,
 
     CAST(ca.bdate AS DATE)          AS birth_date,
