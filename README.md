@@ -20,6 +20,8 @@ This project demonstrates industry best practices in:
 
 Whether you're a recruiter, hiring manager, fellow data professional, or someone passionate about data engineering and analytics, this repository offers a practical, hands-on look at designing and implementing a robust analytics platform from the ground up.
 
+> 🔗 **Companion repository:** The Gold layer built here powers **[SQL Data Analytics Project](https://github.com/tamilvelbhagyaraj/sql-data-analytics-project)** — a dedicated repo covering exploratory data analysis, business KPI reporting, ranking/magnitude analysis, and consolidated customer & product report views. Start here for the warehouse, then head there for the analytics.
+
 ---
 
 ## 📑 Table of Contents
@@ -32,6 +34,7 @@ Whether you're a recruiter, hiring manager, fellow data professional, or someone
 - [Tools & Technologies](#-tools--technologies)
 - [Data Flow](#-data-flow)
 - [How to Use](#-how-to-use)
+- [Related Projects](#-related-projects)
 - [License](#-license)
 - [About Me](#-about-me)
 
@@ -61,6 +64,7 @@ Source Systems (CRM & ERP CSVs)
         │
         ▼
    📊 BI & Reporting →  Power BI / SQL-based Analytics
+                         (see the SQL Data Analytics Project ↗)
 ```
 
 ---
@@ -86,6 +90,8 @@ Design and develop a modern **SQL Server** data warehouse that consolidates sale
 
 **Objective**
 Develop SQL-based analytical solutions that transform warehouse data into meaningful business insights for data-driven decision-making.
+
+> The full implementation of this phase — exploratory analysis, KPI dashboards, ranking/magnitude analysis, and reusable customer & product report views — lives in the companion **[SQL Data Analytics Project](https://github.com/tamilvelbhagyaraj/sql-data-analytics-project)** repo, built entirely on top of this warehouse's Gold layer.
 
 **Analytics Focus Areas**
 
@@ -120,9 +126,10 @@ data-warehouse-project/
 │   ├── silver/                    # Silver layer DDL + load procedures
 │   └── gold/                      # Gold layer views (star schema)
 │
-├── tests/                         # Data quality & validation checks
-│     ├── silver/                    # Silver Layer Quality Checks
-|     └── gold/                      # Gold Layer
+├── tests/                           # Data quality & validation checks
+│     ├── Quality_checks_silver.sql   # Silver Layer Quality Checks
+|     └── Quality_checks_gold.sql     # Gold Layer Quality Checks
+| 
 ├── docs/
 │   ├── data_architecture.png      # Overall architecture diagram
 │   ├── data_flow.png              # Data flow diagram
@@ -132,6 +139,8 @@ data-warehouse-project/
 ├── README.md
 └── LICENSE
 ```
+
+> 📊 Analytics scripts (EDA, KPIs, ranking, customer & product reports) are maintained separately in **[sql-data-analytics-project](https://github.com/tamilvelbhagyaraj/sql-data-analytics-project)** to keep the warehouse (engineering) and analytics (reporting) concerns cleanly separated.
 
 ---
 
@@ -150,7 +159,7 @@ data-warehouse-project/
 1. **Extract** — CSV files from CRM and ERP source systems are bulk-loaded into the **Bronze** layer with no transformations.
 2. **Transform** — Data is cleaned, deduplicated, standardized (naming, codes, formats), and validated in the **Silver** layer.
 3. **Load** — Business-ready **Gold** layer views expose a star schema (fact tables + dimension tables) for reporting.
-4. **Analyze** — SQL-based analytical queries and/or Power BI dashboards consume the Gold layer to surface customer, product, and sales insights.
+4. **Analyze** — SQL-based analytical queries and/or Power BI dashboards consume the Gold layer to surface customer, product, and sales insights. *(Full analytics implementation: [sql-data-analytics-project](https://github.com/tamilvelbhagyaraj/sql-data-analytics-project))*
 
 ---
 
@@ -165,6 +174,15 @@ data-warehouse-project/
    EXEC silver.load_silver;
    ```
 5. Query the Gold layer views for analytics, or connect Power BI/SSMS for reporting.
+6. For ready-made analytics on top of the Gold layer — EDA, KPIs, rankings, and customer/product reports — clone **[sql-data-analytics-project](https://github.com/tamilvelbhagyaraj/sql-data-analytics-project)** and point it at this warehouse.
+
+---
+
+## 🔗 Related Projects
+
+| Project | Description |
+|---|---|
+| 📊 **[SQL Data Analytics Project](https://github.com/tamilvelbhagyaraj/sql-data-analytics-project)** | Exploratory & advanced SQL analytics built on this warehouse's Gold layer — date range and KPI exploration, magnitude and ranking analysis, and consolidated customer/product reporting views.
 
 ---
 
