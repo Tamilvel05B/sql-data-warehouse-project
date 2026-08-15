@@ -35,6 +35,7 @@ Whether you're a recruiter, hiring manager, fellow data professional, or someone
 - [Data Flow](#-data-flow)
 - [How to Use](#-how-to-use)
 - [Related Projects](#-related-projects)
+- [Acknowledgments](#-acknowledgments)
 - [License](#-license)
 - [About Me](#-about-me)
 
@@ -126,10 +127,9 @@ data-warehouse-project/
 │   ├── silver/                    # Silver layer DDL + load procedures
 │   └── gold/                      # Gold layer views (star schema)
 │
-├── tests/                           # Data quality & validation checks
-│     ├── Quality_checks_silver.sql   # Silver Layer Quality Checks
-|     └── Quality_checks_gold.sql     # Gold Layer Quality Checks
-| 
+├── tests/                         # Data quality & validation checks
+│     ├── silver                    # Silver Layer Quality Checks
+|     └── gold                      # Gold Layer Quality Checks
 ├── docs/
 │   ├── data_architecture.png      # Overall architecture diagram
 │   ├── data_flow.png              # Data flow diagram
@@ -182,7 +182,17 @@ data-warehouse-project/
 
 | Project | Description |
 |---|---|
-| 📊 **[SQL Data Analytics Project](https://github.com/tamilvelbhagyaraj/sql-data-analytics-project)** | Exploratory & advanced SQL analytics built on this warehouse's Gold layer — date range and KPI exploration, magnitude and ranking analysis, and consolidated customer/product reporting views.
+| 📊 **[SQL Data Analytics Project](https://github.com/tamilvelbhagyaraj/sql-data-analytics-project)** | Exploratory & advanced SQL analytics built on this warehouse's Gold layer — date range and KPI exploration, magnitude and ranking analysis, and consolidated customer/product reporting views. |
+
+---
+
+## 🙏 Acknowledgments
+
+This project was built while learning from **[Data with Baraa](https://www.youtube.com/@DataWithBaraa)**'s free SQL Data Warehouse & Analytics course. All scripts, architecture decisions, and documentation were built and written by me as a hands-on learning exercise — full credit to Baraa Khatib Salkini for the course structure and teaching approach that this project follows.
+
+- 🎥 YouTube: [Data With Baraa](https://www.youtube.com/@DataWithBaraa)
+- 💻 GitHub: [github.com/DataWithBaraa](https://github.com/DataWithBaraa)
+- 📦 Original repo this project follows: [DataWithBaraa/sql-data-warehouse-project](https://github.com/DataWithBaraa/sql-data-warehouse-project)
 
 ---
 
